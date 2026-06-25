@@ -42,6 +42,8 @@ Smithery平台
 一种是python编写的服务，一种是TypeScript编写的服务
 分别对应着uvx和npx两种指令
 
+uvx安装方式：pip install uvx
+
 # 4.MCP的工作原理
 
 # 5.手动开发MCP项目（C/S）
