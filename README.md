@@ -44,6 +44,8 @@ Smithery平台
 
 uvx安装方式：pip install uvx
 
+设置minimax的配置
+
 # 4.MCP的工作原理
 
 # 5.手动开发MCP项目（C/S）
