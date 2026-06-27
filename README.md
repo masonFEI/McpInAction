@@ -44,9 +44,27 @@ Smithery平台
 
 uvx安装方式：pip install uvx
 
-设置minimax的配置
+mcp mysql server（github上找下 https://github.com/burakdirin/mysqldb-mcp-server）
 
 # 4.MCP的工作原理
+
+MCP遵循客户端-服务器架构（client-server）,其中包含以下几个核心概念：
+
+- MCP主机（MCP Hosts）例如Claude,code
+- MCP客户端（MCP Clients）,充当LLM和MCP server之间的桥梁，嵌入在主机程序中；
+    - 接收来自LLM的请求，
+    - 并将其转发给MCP server
+    - 接收MCP server的响应，并将其返回给LLM
+- MCP服务器（MCP Servers），既可以是本地的（stdio的方式），也可以是远程的（sse的方式），负责处理来自MCP客户端的请求，并与外部资源进行交互。
+- 本地资源（Local Resources）例如数据库，本地文件
+- 远程资源（Remote Resources）例如高德地图
+
+## MCP工作流程
+
+API主要有两个
+
+- tool/list: 列出Server支持的所有工具
+- tools/call:Client请求Server去执行某个工具，并将结果返回
 
 # 5.手动开发MCP项目（C/S）
 
