@@ -68,9 +68,13 @@ API主要有两个
 
 # 5.手动开发MCP项目（C/S）
 
+python -m uv init mcp-project
+
 # 6.大众用户如何使用MCP
 
 # 7.热门MCP Servers推荐
+文件系统 filesystem
+记忆图谱memory graph
 
 # 8.A2A协议：开启Agent间协作
 
